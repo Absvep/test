@@ -2,4 +2,6 @@ git init - initiera repository
 git status - repository status
 git add filename - To tell Git to start tracking changes in file, we first need to add it to the staging area (Index) by using git add.
 git commit -m "Add cute octocat story" - files in staging area (Index) not in repository yet.To store our staged changes (put them to HEAD) we run the commit command with a message describing what we've changed.
-git remote add origin https://github.com/try-git/try_git.git - If you have not cloned an existing repository and want to connect your repository to a remote server. Now you are able to push your changes to the selected remote server
+git remote add origin https://github.com/try-git/try_git.git - If you have not cloned an existing repository and want to connect your repository to a remote server. Now you are able to push your changes to the selected remote server.
+git push -u origin master - Let's push our local changes to our origin repo (on GitHub). The name of our remote is origin and the default local branch name is master. The -u tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do.
+git pull origin master - We can check for changes on our GitHub repository and pull down any new changes by running (if i.e. other people made changes).
